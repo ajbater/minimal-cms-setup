@@ -1,0 +1,15 @@
+backend:
+  name: github
+  repo: ajbater/minimal-cms-setup
+
+media_folder: media_folder
+
+collections:
+  - name: post
+    label: Post
+    folder: posts
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: intro, label: Intro, widget: markdown }
+      - { name: body, label: Body, widget: markdown }
